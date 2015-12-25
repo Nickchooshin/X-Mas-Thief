@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Thief : MonoBehaviour {
@@ -14,5 +13,7 @@ public class Thief : MonoBehaviour {
 
         Vector3 moveVector = new Vector3(h * speed * Time.deltaTime, v * speed * Time.deltaTime);
         transform.position += moveVector;
+
+        Debug.Log(h + v);
     }
 }
