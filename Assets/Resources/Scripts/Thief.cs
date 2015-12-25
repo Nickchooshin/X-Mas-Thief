@@ -17,4 +17,9 @@ public class Thief : MonoBehaviour {
         if (transform.position.x > 3.46f)
             transform.position = new Vector3(3.46f, transform.position.y);
     }
+
+    private void GetPresent()
+    {
+        transform.eulerAngles = new Vector3(0.0f, 180.0f, 0.0f);
+    }
 }

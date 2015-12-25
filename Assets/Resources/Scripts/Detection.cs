@@ -19,7 +19,7 @@ public class Detection : MonoBehaviour {
         StartCoroutine("DetectionDecrease");
     }
 
-    IEnumerator MoveDetection()
+    private IEnumerator MoveDetection()
     {
         while (true)
         {

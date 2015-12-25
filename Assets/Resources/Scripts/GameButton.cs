@@ -11,6 +11,8 @@ public class GameButton : MonoBehaviour {
     {
         titlePanel.SetActive(false);
         gamePanel.SetActive(true);
+
+        GameObject.Find("script_Score").SendMessage("StartTimeFlows");
     }
 
     public void ClickPauseButton()
